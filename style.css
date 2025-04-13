@@ -1,70 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: "Winky Rough", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 15%;  
-    background-color: #1f2937;  
+    background-color: #562965;  
     color: white;
 }
 
 header h2 {
-    font-size: 24px;
-    color: #f9faf8;
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
+    color: yellow;
+    font-size: 44px;
 }
 
 header ul {
     list-style-type: none;
     display: flex;
-    gap: 35px;
-    font-size: 18px;
+    gap: 40px;
+    font-size: 20px;
     color: #e5e7eb;
 }
 
+header li:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
 .hero {
-    background-color: #1f2937;  
+    background-color: #562965;  
     color: white;
     padding: 70px 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
 }
 
 .hero-content {
-    width: 470px;
+    width: 550px;
 }
 
 .hero-content h2 {
-    font-size: 48px;
+    font-size: 38px;
     margin-bottom: 10px;
+}
+
+
+.hero-img {
+    width: 600px;
 }
 
 .hero-content p {
     font-size: 18px;
     color: #e5e7eb;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .signup-btn {
     background-color: #3882f6;
     border: none;
     border-radius: 10px;
-    padding: 10px 35px;
+    padding: 10px 40px;
     color: white;
     font-size: 18px;
     font-weight: bold;    
 }
 
-.hero-img {
-    width: 600px;
+.signup-btn:hover {
+    background-color: #1265ea;
+    cursor: pointer;
 }
 
 .img-items {
@@ -75,26 +89,31 @@ header ul {
 }
 
 .img-items h2 {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-size: 36px;
     color: #1f2937;
 }
 
 .img-cont {
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 
 .img-cont .card {
-    width: 220px;  
+    width: 250px;  
     text-align: center;
 }
 
 .img-cont img{
     width: 220px;
-    height: 200px;
+    height: 200px;       
+}
+
+.card div{
+    border: 3px solid rgb(179 69 191);
     border-radius: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding: 8px 0;
 }
 
 .quote-cont {
@@ -132,14 +151,23 @@ header ul {
 }
 
 .action-cont > div {
-    background-color: #3882f6;
+    background: linear-gradient(159deg, #2d7fff, #df5f5f);
     display: flex;
-    padding: 50px 70px;
+    padding: 40px 60px;
     border-radius: 10px;
     color: white;
     justify-content: space-between;
-    width: 930px;
+    width: 970px;
     align-items: center;
+    gap: 50px;
+}
+
+.action-content-cont h2 {
+    margin-bottom: 15px;
+}
+
+.action-content-cont {
+    flex: 1;
 }
 
 .action-cont .signup-btn {
@@ -148,7 +176,7 @@ header ul {
 }
 
 footer {
-    background-color: #1f2937;
+    background-color: #562965;
     color: white;
     text-align: center;
     padding: 40px;
